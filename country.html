@@ -64,7 +64,7 @@
          <div id="plotly-choropleth-map"></div>
 
           <script>
-              Plotly.d3.text("data_viz_embed_just_div2.html", function(error, data){
+              Plotly.d3.text("https://alangordon7.github.io/final-project/data_viz_embed_just_div2.html", function(error, data){
                   if(error) return console.warn(error);
                   var graph = Plotly.d3.select("#plotly-choropleth-map").html(data).selectAll("script");
                   eval(graph.html());
